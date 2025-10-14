@@ -1,3 +1,4 @@
+import BrandsOne from "@/components/homes/brands/BrandsOne";
 import OfferDestinations from "@/components/homes/destinations/OfferDestinations";
 import TrendingDestinations from "@/components/homes/destinations/TrendingDestinations";
 import FeaturesFour from "@/components/homes/features/FeaturesFour";
@@ -18,6 +19,8 @@ const page = () => {
       <Header1 />
       <Hero10 />
       <OfferDestinations />
+      <BrandsOne />
+
       <HajOmra />
       <TrendingDestinations />
       <FeaturesFour />

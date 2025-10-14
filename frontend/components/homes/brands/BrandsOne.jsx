@@ -8,7 +8,7 @@ import React from "react";
 
 export default function BrandsOne() {
   return (
-    <section className="layout-pt-xl layout-pb-xl">
+    <section className="layout-pt-xl ">
       <div className="container">
         <div className="row justify-center text-center">
           <div className="col-auto">
