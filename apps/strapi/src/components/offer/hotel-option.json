@@ -1,0 +1,60 @@
+{
+  "collectionName": "components_offer_hotel_options",
+  "info": {
+    "displayName": "Hotel Option",
+    "description": "Individual hotel package with pricing"
+  },
+  "options": {},
+  "attributes": {
+    "hotelName": {
+      "type": "string",
+      "required": true
+    },
+    "nights": {
+      "type": "integer",
+      "required": true
+    },
+    "mealPlan": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "EGP",
+        "USD",
+        "EUR",
+        "GBP"
+      ]
+    },
+    "location": {
+      "type": "string"
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "roomPricing": {
+      "type": "component",
+      "component": "offer.room-pricing",
+      "repeatable": true
+    },
+    "kidsPricing": {
+      "type": "component",
+      "component": "offer.kids-pricing",
+      "repeatable": true
+    },
+    "notes": {
+      "type": "text"
+    },
+    "stars": {
+      "type": "integer",
+      "min": 1,
+      "max": 5
+    }
+  }
+}
