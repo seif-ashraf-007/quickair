@@ -12,7 +12,8 @@
     "start": "strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
-    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+    "upgrade:dry": "npx @strapi/upgrade latest --dry",
+    "postinstall": "npm rebuild @swc/core"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.30.0",
@@ -20,6 +21,7 @@
     "@strapi/plugin-seo": "^2.0.8",
     "@strapi/plugin-users-permissions": "5.30.0",
     "@strapi/strapi": "5.30.0",
+    "@swc/core-linux-x64-gnu": "^1.9.2",
     "better-sqlite3": "11.3.0",
     "lru-cache": "^11.2.2",
     "react": "^18.0.0",
